@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ShoppingBasket } from "lucide-react";
-import { Reveal } from "../ui/Reveal";
+import { Reveal } from "../../ui/Reveal";
 
 export const Hero = () => {
   return (
@@ -19,9 +19,9 @@ export const Hero = () => {
 
       <div className="relative z-20 w-full max-w-7xl mx-auto px-4 flex flex-col items-center">
         {/* --- LEFT STICKER --- */}
-        <div className="absolute left-8 bottom-32 hidden lg:block">
+        {/* <div className="absolute left-8 bottom-32 hidden lg:block">
           <img src="/zigvector.png" alt="decoration" className="w-24 h-auto" />
-        </div>
+        </div> */}
 
         {/* --- RIGHT BLOB --- */}
         <div className="absolute right-0 top-1/4 hidden lg:block opacity-20 pointer-events-none">
@@ -58,7 +58,7 @@ export const Hero = () => {
             {/* HEADING: Uses Concert One (font-display) 
                 Note: Concert One is naturally bold, so we don't need 'font-extrabold'
             */}
-            <h1 className="font-days text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-wide drop-shadow-sm mt-2">
+            <h1 className="font-days text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-wide drop-shadow-sm -mt-1">
               DISCOVER THE WORLD OF <br />
               AFRICAN ANCIENT WISDOM
             </h1>
@@ -66,7 +66,7 @@ export const Hero = () => {
 
           <Reveal delay={0.3}>
             {/* PARAGRAPH: Uses Days One (font-days) */}
-            <p className="font-days text-sm md:text-lg font-normal max-w-xl mx-auto leading-relaxed opacity-95 mt-4">
+            <p className="font-days text-xs md:text-lg font-normal max-w-xl mx-auto leading-relaxed opacity-95 -mt-1">
               If it takes a village to raise a child, it will take a Bokobo kids
               village to raise the next generation of global citizens
             </p>
@@ -74,7 +74,7 @@ export const Hero = () => {
 
           <Reveal delay={0.4}>
             {/* BUTTON: Uses Andika (font-sans) */}
-            <button className="font-sans mt-8 bg-white text-[#1F2937] pl-6 pr-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-transform duration-200 flex items-center gap-3 shadow-lg">
+            <button className="font-sans mt-4 bg-white text-[#1F2937] pl-6 pr-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-transform duration-200 flex items-center gap-3 shadow-lg">
               <ShoppingBasket className="w-5 h-5" />
               See our bookstore
             </button>
